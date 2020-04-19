@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Lee Williams Dot Dev`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Lee Williams`,
+      summary: `who lives and works in Staffordshire, UK making useful things for busy people.`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://leewilliams.dev/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `leemw1977`,
     },
   },
   plugins: [
