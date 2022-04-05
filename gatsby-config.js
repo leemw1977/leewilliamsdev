@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Lee Williams Dot Dev`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Lee Williams`,
+      summary: `who lives and works in Staffordshire, UK making sure folks understand the risks.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `A blog put together for Lee Williams to remember things.`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `leemw1977`,
     },
   },
   plugins: [
