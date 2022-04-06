@@ -3,7 +3,7 @@ module.exports = {
     title: `Lee Williams Dot Dev`,
     author: {
       name: `Lee Williams`,
-      summary: `who lives and works in Staffordshire, UK making sure folks understand the risks.`,
+      summary: `who lives and works in Staffordshire, UK. A developer for 21 years they recently moved in to the infosec space.`,
     },
     description: `A blog put together for Lee Williams to remember things.`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,

@@ -20,4 +20,4 @@ In short...
 
 With this setup ([gatsbyjs](https://gatsbyjs.org) starter and AWS amplify and some route53) means now I just create a markdown doc, git commit, git push, and it's out the door.
 
-Expect a follow up post on how I setup the route53 stuff for a domain I had lying about.
+I even have a staging environment available [here](https://beta.leewilliams.dev) this is driven by a different branch but the process is the same behind the scenes apart from that, obviously the process then is repeatable and verifiable - we can move to "production" with a high confidence level.
