@@ -1,3 +1,40 @@
+/**
+* The currently active environment.
+* This is used to set the corresponding Tag Manager environment config.
+*/
+const activeEnv =
+ process.env.GATSBY_ACTIVE_ENV || process.env.NODE_ENV || "development"
+console.log(`Using environment config: '${activeEnv}'`)
+
+// The Tag Manager Container ID.
+const gtmContainerId = "GTM-NNMCM6T"
+
+/**
+* Tag Manager Environment values to configure gatsby-plugin-google-tagmanager.
+* null values will cause the default (live/production) snippet to load.
+*/
+const gtmEnv = {
+ // If tag manager plugin is configured with includeInDevelopment set to
+ // true then you should create a corresponding Development environment in
+ // Tag Manager and replace the null values with the container environment
+ // auth and preview values. Otherwise the production snippet will load.
+ development: {
+  gtmAuth: "_UWyJVqLzPwthLNvvwNxiw",
+  gtmPreview: "env-3",
+ },
+
+ staging: {
+   gtmAuth: "_UWyJVqLzPwthLNvvwNxiw",
+   gtmPreview: "env-3",
+ },
+
+ // According to GTM docs you should use standard tag for prod so we'll set to null.
+ production: {
+   gtmAuth: null,
+   gtmPreview: null,
+ },
+}
+
 module.exports = {
   siteMetadata: {
     title: `Lee Williams Dot Dev`,
@@ -128,5 +165,16 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: gtmContainerId,
+        includeInDevelopment: false,
+   
+        // GTM environment details.
+        gtmAuth: gtmEnv[activeEnv].gtmAuth,
+        gtmPreview: gtmEnv[activeEnv].gtmPreview,
+      },
+    },
   ],
 }
